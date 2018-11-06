@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../static/css/teacherpage.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- Top Header -->
+<nav class="navbar  sticky-top navbar-light flex-md-nowrap p-0" style="background-color: #6D7993;">
+
+    <img src="../static/img/car.png" width="70" height="60" alt="">
+    <a class="navbar-brand" href="#"></a>
+    <h2 class="text-center">Teacher</h2>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<!-- Side Navigation Bar -->
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dash" href="teacherpage">
+                            <span data-feather="home"></span>
+                            <span class="sr-only"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li id="blueRoom" class="nav-item">
+                        <a style="color:blue" class="nav-link" href="teacher-blueroom">
+                            <span data-feather="circle"></span>
+                            Blue Room
+                        </a>
+                    </li>
+                    <li id="purpleRoom" class="nav-item">
+                        <a style="color:purple" class="nav-link" href="teacher-purpleroom">
+                            <span data-feather="circle"></span>
+                            Purple Room
+                        </a>
+                    </li>
+                    <li id="greenRoom" class="nav-item">
+                        <a style="color:green" class="nav-link" href="teacher-greenroom">
+                            <span data-feather="circle"></span>
+                            Green Room
+                        </a>
+                    </li>
+                    <li id="redRoom" class="nav-item">
+                        <a style="color:red" class="nav-link active" href="teacher-redroom">
+                            <span data-feather="circle" fill="red"></span>
+                            Red Room
+                        </a>
+                    </li>
+                    <li id="greyRoom" class="nav-item">
+                        <a style="color:grey" class="nav-link" href="teacher-greyroom">
+                            <span data-feather="circle"></span>
+                            Grey Room
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login">
+                            <span data-feather="layers"></span>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Content Header -->
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2" id="name">Red Room</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button class="btn btn-sm btn-outline-secondary">Share</button>
+                <button class="btn btn-sm btn-outline-secondary">Export</button>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                <span data-feather="calendar"></span>
+                This week
+            </button>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container" id="div_content" align="center">
+
+        <h1>Red Room Schedule</h1>
+
+    </div>
+</main>
+
+
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace();
+</script>
+
+
+<!-- Dummy Chart -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+<!-- Load own script -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--
+<script src="../static/js/teacher.js"></script>
+-->
+
+</body>
+</html>
